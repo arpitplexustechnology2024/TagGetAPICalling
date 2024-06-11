@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+
+// MARK: - Welcome
+struct Welcome: Codable {
+    let data: DataClass
+}
+
+// MARK: - DataClass
+struct DataClass: Codable {
+    let query: String
+    let tags: [String]
+}

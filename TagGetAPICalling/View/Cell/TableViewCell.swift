@@ -8,6 +8,10 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
+    
+    
+    @IBOutlet weak var tagsLbl: UILabel!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
