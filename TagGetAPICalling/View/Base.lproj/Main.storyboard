@@ -67,6 +67,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ecx-zA-Xvr">
+                                <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                            </activityIndicatorView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nWJ-fI-TmJ">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -120,13 +123,16 @@
                         <viewLayoutGuide key="safeArea" id="FtI-E1-uds"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ecx-zA-Xvr" firstAttribute="centerY" secondItem="Llv-wi-eej" secondAttribute="centerY" id="2JQ-d3-IF7"/>
                             <constraint firstItem="nWJ-fI-TmJ" firstAttribute="top" secondItem="FtI-E1-uds" secondAttribute="top" id="8Oa-fo-ZKq"/>
                             <constraint firstItem="FtI-E1-uds" firstAttribute="trailing" secondItem="nWJ-fI-TmJ" secondAttribute="trailing" id="TcQ-5S-Bce"/>
                             <constraint firstItem="FtI-E1-uds" firstAttribute="bottom" secondItem="nWJ-fI-TmJ" secondAttribute="bottom" id="XDE-FY-EGo"/>
+                            <constraint firstItem="ecx-zA-Xvr" firstAttribute="centerX" secondItem="Llv-wi-eej" secondAttribute="centerX" id="iCT-BS-gpt"/>
                             <constraint firstItem="nWJ-fI-TmJ" firstAttribute="leading" secondItem="FtI-E1-uds" secondAttribute="leading" id="qLz-Ii-bPq"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="ecx-zA-Xvr" id="YAa-D0-jpJ"/>
                         <outlet property="tableView" destination="nWJ-fI-TmJ" id="0O8-ea-spn"/>
                     </connections>
                 </viewController>
